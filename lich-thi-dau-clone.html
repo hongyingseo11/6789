@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lịch Thi Đấu RR88 Clone</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Lexend', sans-serif;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      background: #fff;
+      color: #111;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .match {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #ddd;
+      padding: 10px 0;
+      position: relative;
+    }
+    .time {
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      animation: blink 1s infinite;
+    }
+    .time::before {
+      content: '\23F0'; /* icon đồng hồ */
+      margin-right: 6px;
+    }
+    .teams {
+      flex: 1;
+      text-align: center;
+    }
+    .score {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Lịch Thi Đấu Hôm Nay</h1>
+    <div class="match">
+      <div class="time">90+4'</div>
+      <div class="teams">Liverpool vs Man City</div>
+      <div class="score">2 - 1</div>
+    </div>
+    <div class="match">
+      <div class="time">45+2'</div>
+      <div class="teams">Real Madrid vs Barcelona</div>
+      <div class="score">1 - 0</div>
+    </div>
+    <div class="match">
+      <div class="time">22'</div>
+      <div class="teams">Arsenal vs Chelsea</div>
+      <div class="score">0 - 0</div>
+    </div>
+  </div>
+</body>
+</html>
